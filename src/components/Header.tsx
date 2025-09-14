@@ -12,12 +12,21 @@ function Header() {
             <span className="text-xl font-semibold text-gray-900">LinkedIn Profile Enhancer</span>
           </Link>
           
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 items-center">
             <Link to="/" className="text-gray-600 hover:text-blue-600 transition-colors">
               Home
             </Link>
             <Link to="/input" className="text-gray-600 hover:text-blue-600 transition-colors">
               Enhance Profile
+            </Link>
+            <Link to="/login" className="text-gray-600 hover:text-blue-600 transition-colors">
+              Login
+            </Link>
+            <Link
+              to="/signup"
+              className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+            >
+              Sign Up
             </Link>
           </nav>
         </div>
