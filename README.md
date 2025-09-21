@@ -1,50 +1,108 @@
-# React + TypeScript + Vite
+LinkedIn Profile Enhancer
+A full-stack application that helps users optimize their LinkedIn profiles using AI-powered suggestions and professional enhancements.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+AI Profile Analysis: Get instant feedback on your LinkedIn profile
+Interactive Dashboard: Visual before/after comparisons
+Resume Integration: Upload and analyze resumes
+Profile Scoring: Numerical ratings with section-by-section feedback
+Export Options: Easy copy/download of enhanced content
+Responsive Design: Seamless experience across all devices
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+Frontend:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 18 with TypeScript
+Vite for build tooling
+TailwindCSS for styling
+React Router for navigation
+Backend:
 
-## Expanding the ESLint configuration
+Node.js with Express
+MySQL database
+JWT authentication
+bcrypt for password hashing
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+📦 Installation
 
-- Configure the top-level `parserOptions` property like this:
+1.Clone the repository:
+git clone https://github.com/Varun18K/ProfileBooster.git
+cd ProfileBooster
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2.Setup Backend:
+cd backend
+npm install
+cp .env.example .env  # Configure your environment variables
+npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3.Setup Frontend:
+cd frontend
+npm install
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+🌐 Environment Variables
+Create .env files in both frontend and backend directories:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=profile_booster
+JWT_SECRET=your_secret
+
+📁 Project Structure
+
+ProfileBooster/
+├── backend/                # Node.js backend
+│   ├── controllers/       # Route controllers
+│   ├── models/           # Database models
+│   └── routes/           # API routes
+├── frontend/              # React frontend
+│   ├── src/
+│   │   ├── components/   # Reusable components
+│   │   ├── pages/       # Page components
+│   │   └── utils/       # Helper functions
+│   └── public/          # Static assets
+└── README.md
+
+🔧 Scripts
+Backend:
+npm run dev    # Start development server
+npm run build  # Build for production
+npm start      # Run production server
+
+Frontend:
+npm run dev    # Start Vite dev server
+npm run build  # Build for production
+npm run lint   # Run ESLint
+
+🧪 Testing
+# Run backend tests
+cd backend && npm test
+
+# Run frontend tests
+cd frontend && npm test
+
+🚀 Deployment
+1.Build both frontend and backend
+2.Configure environment variables
+3.Set up database
+4.Deploy to your preferred hosting service
+
+📝 License
+MIT License - see LICENSE for details
+
+👥 Contributing
+1.Fork the repository
+2.Create your feature branch (git checkout -b feature/AmazingFeature)
+3.Commit changes (git commit -m 'Add: AmazingFeature')
+4.Push to branch (git push origin feature/AmazingFeature)
+5.Open a Pull Request
+
+
+📸 Screenshots
+
+📫 Contact 
+
+email: karlevarun18@gmail.com
+Project Link: https://github.com/Varun18K/ProfileBooster
+
